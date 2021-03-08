@@ -64,3 +64,9 @@ func (r *PhonebookRepository) GetMetaDataPhoneBook(ctx context.Context, params *
 	// TODO: create query for get metadata
 	return 0, nil
 }
+
+// GetPhonebook ...
+func (r *PhonebookRepository) GetPhonebook(ctx context.Context, params interface{}) (interface{}, error)
+
+// Insert ...
+func (r *PhonebookRepository) Insert(ctx context.Context, params interface{}) error

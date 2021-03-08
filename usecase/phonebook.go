@@ -79,3 +79,9 @@ func (pb *PhoneBook) GetList(ctx context.Context, params *model.ParamsPhoneBook)
 		Total:      total,
 	}, nil
 }
+
+// Insert ...
+func (pb *PhoneBook) Insert(ctx context.Context, params interface{}) error {
+	// TODO: insert new phone number
+	return nil
+}

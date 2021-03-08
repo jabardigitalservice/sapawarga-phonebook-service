@@ -63,3 +63,32 @@ func (mr *MockPhoneBookIMockRecorder) GetMetaDataPhoneBook(arg0, arg1 interface{
 	mr.mock.ctrl.T.Helper()
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetMetaDataPhoneBook", reflect.TypeOf((*MockPhoneBookI)(nil).GetMetaDataPhoneBook), arg0, arg1)
 }
+
+// GetPhonebook mocks base method
+func (m *MockPhoneBookI) GetPhonebook(arg0 context.Context, arg1 interface{}) (interface{}, error) {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "GetPhonebook", arg0, arg1)
+	ret0, _ := ret[0].(interface{})
+	ret1, _ := ret[1].(error)
+	return ret0, ret1
+}
+
+// GetPhonebook indicates an expected call of GetPhonebook
+func (mr *MockPhoneBookIMockRecorder) GetPhonebook(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPhonebook", reflect.TypeOf((*MockPhoneBookI)(nil).GetPhonebook), arg0, arg1)
+}
+
+// Insert mocks base method
+func (m *MockPhoneBookI) Insert(arg0 context.Context, arg1 interface{}) error {
+	m.ctrl.T.Helper()
+	ret := m.ctrl.Call(m, "Insert", arg0, arg1)
+	ret0, _ := ret[0].(error)
+	return ret0
+}
+
+// Insert indicates an expected call of Insert
+func (mr *MockPhoneBookIMockRecorder) Insert(arg0, arg1 interface{}) *gomock.Call {
+	mr.mock.ctrl.T.Helper()
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "Insert", reflect.TypeOf((*MockPhoneBookI)(nil).Insert), arg0, arg1)
+}
